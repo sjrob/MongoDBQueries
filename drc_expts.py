@@ -3,7 +3,6 @@ import datetime
 import pandas as pd
 import get_metadata as gm
 
-
 #2 sites of Bandundu (Caravane and 3 Rivière): 30th June 2022 – 30th October 2022
 experiment_name = 'bandundu_incentive'
 
@@ -93,11 +92,14 @@ uuid_list = [
 ]
 
 gm.get_metadata(experiment_name, start_datetime, end_datetime, uuid_list)
-	
+
+
+#2 sites of Kinshasa (incentive and control): 5th July 2022 - 5th November 2022.
+
 experiment_name = 'kinshasa_control'
 
-start_datetime = datetime.datetime(2022, 6, 30, 0, 0, 0, 0)
-end_datetime = datetime.datetime(2022, 10, 30, 23, 59, 59, 999999)
+start_datetime = datetime.datetime(2022, 7, 5, 0, 0, 0, 0)
+end_datetime = datetime.datetime(2022, 11, 5, 23, 59, 59, 999999)
 
 uuid_list = [
     '1b29d5c8adbab809',
@@ -140,8 +142,8 @@ gm.get_metadata(experiment_name, start_datetime, end_datetime, uuid_list)
 	
 experiment_name = 'kinshasa_incentive'
 
-start_datetime = datetime.datetime(2022, 6, 30, 0, 0, 0, 0)
-end_datetime = datetime.datetime(2022, 10, 30, 23, 59, 59, 999999)
+start_datetime = datetime.datetime(2022, 7, 5, 0, 0, 0, 0)
+end_datetime = datetime.datetime(2022, 11, 5, 23, 59, 59, 999999)
 
 uuid_list = [
     '03d783523b494250',
